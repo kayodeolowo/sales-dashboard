@@ -159,7 +159,7 @@ const Home = () => {
                                             Cloud
                                         </th>
                                         <td class="py-4 text-white">
-                                            1,044
+                                            1,046
                                         </td>
                                         <td class=" py-4 text-white">
                                             Storage
