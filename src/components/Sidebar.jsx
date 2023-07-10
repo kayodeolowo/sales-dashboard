@@ -86,7 +86,7 @@ const Sidebar = () => {
         </div>
 
         {/* mobile menu */}
-        <div className={nav ? ' leading-loose text-start bg-black pl-3  text-base pt-10  space-y-4   text-greytext left-0 top-0   w-[70%]  mx-auto z-10   duration-300 flex h-full fixed  flex-col' : 'absolute left-[-100%] '}>
+        <div className={nav ? ' leading-loose text-start bg-black pl-3  text-base pt-10  space-y-4   text-greytext left-0 top-0   w-[60%]  mx-auto z-10   duration-300 flex h-full fixed  flex-col' : 'absolute left-[-100%] '}>
           <div className='flex flex-row space-x-16 items-center'>
             <div className='flex mb-8  space-x-2  items-center'>
               <img src='./images/logo.png' alt='logo' className='w-6' />
@@ -96,13 +96,13 @@ const Sidebar = () => {
             <IoMdClose className='font-bold -mt-6 hover:cursor-pointer text-2xl text-white' onClick={handleNav} />
           </div>
 
-          <NavLink to='/dashboard' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text onClick={handleNav}> <AiFillHome className='mr-2' /> Dashboard </Text>   </NavLink>
-          <NavLink to='/orders' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text onClick={handleNav}> <BsFillCartCheckFill className='mr-2 font-bold' /> Orders </Text>   </NavLink>
-          <NavLink to='/products' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text onClick={handleNav}> <BsFillBasket2Fill className='mr-2' /> Products </Text>   </NavLink>
-          <NavLink to='/sales-report' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text onClick={handleNav}> <RiBarChartFill className='mr-2' /> Sales Report </Text>   </NavLink>
-          <NavLink to='/leaderboard' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text onClick={handleNav}> <RiBarChartFill className='mr-2' /> LeaderBoard </Text>   </NavLink>
-          <NavLink to='/settings' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text onClick={handleNav}> <IoMdSettings className='mr-2' /> Settings </Text>   </NavLink>
-          <Text onClick={handleNav}> <TbLogout className='mr-2' /> Sign Out </Text>
+          <NavLink to='/dashboard' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='w-fit' onClick={handleNav}> <AiFillHome className='mr-2' /> Dashboard </Text>   </NavLink>
+          <NavLink to='/orders' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='w-fit' onClick={handleNav}> <BsFillCartCheckFill className='mr-2 font-bold' /> Orders </Text>   </NavLink>
+          <NavLink to='/products' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='w-fit' onClick={handleNav}> <BsFillBasket2Fill className='mr-2' /> Products </Text>   </NavLink>
+          <NavLink to='/sales-report' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='w-fit' onClick={handleNav}> <RiBarChartFill className='mr-2' /> Sales Report </Text>   </NavLink>
+          <NavLink to='/leaderboard' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='w-fit' onClick={handleNav}> <RiBarChartFill className='mr-2' /> LeaderBoard </Text>   </NavLink>
+          <NavLink to='/settings' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='w-fit' onClick={handleNav}> <IoMdSettings className='mr-2' /> Settings </Text>   </NavLink>
+          <Text className='w-fit' onClick={handleNav}> <TbLogout className='mr-2' /> Sign Out </Text>
 
         </div>
       </div>
