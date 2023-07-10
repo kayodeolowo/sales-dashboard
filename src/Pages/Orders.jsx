@@ -8,7 +8,7 @@ const Orders = () => {
     <div>
             <DashboardContainer>
                 <NavContainer>
-                    <h1 className='text-white'> Orders </h1>
+                   
                     <Navbar />
                 </NavContainer>
             </DashboardContainer>

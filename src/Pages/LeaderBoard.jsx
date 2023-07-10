@@ -8,7 +8,7 @@ const LeaderBoard = () => {
     <div>
             <DashboardContainer>
                 <NavContainer>
-                    <h1 className='text-white'> Leaderboard </h1>
+                    
                     <Navbar />
                 </NavContainer>
             </DashboardContainer>

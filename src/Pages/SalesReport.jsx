@@ -8,7 +8,7 @@ const SalesReport = () => {
     <div>
             <DashboardContainer>
                 <NavContainer>
-                    <h1 className='text-white'> Sales Report </h1>
+                   
                     <Navbar />
                 </NavContainer>
             </DashboardContainer>

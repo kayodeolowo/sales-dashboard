@@ -8,7 +8,7 @@ const Settings = () => {
     <div>
     <DashboardContainer>
         <NavContainer>
-            <h1 className='text-white'> Settings </h1>
+           
             <Navbar />
         </NavContainer>
     </DashboardContainer>

@@ -8,7 +8,6 @@ const Products = () => {
     <div>
             <DashboardContainer>
                 <NavContainer>
-                    <h1 className='text-white'> Products </h1>
                     <Navbar />
                 </NavContainer>
             </DashboardContainer>

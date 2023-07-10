@@ -1,0 +1,41 @@
+[
+    { 
+      "id": 1,
+      "image": "./images/sales.png",
+      "amount": "$5k",
+      "type" : "Total Sales",
+      "des" : "+10% from yesterday"
+    },
+
+    { 
+        "id": 2,
+        "image": "./images/order.png",
+        "amount": "500",
+        "type" : "Total Order",
+        "des" : "+8% from yesterday"
+      },
+
+      { 
+        "id": 3,
+        "image": "./images/sold.png",
+        "amount": "9",
+        "type" : "Product Sold",
+        "des" : "+2% from yesterday"
+      },
+
+      { 
+        "id": 4,
+        "image": "./images/customer.png",
+        "amount": "12",
+        "type" : "New Customer",
+        "des" : "+3% from yesterday"
+      }
+
+  
+    
+      
+  ]
+  
+  
+  
+  
