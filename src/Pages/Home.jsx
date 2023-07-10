@@ -3,6 +3,7 @@ import { DashboardContainer } from '../styles/DashboardContainer';
 import { NavContainer } from '../styles/NavContainer';
 import Navbar from '../components/Navbar';
 import salesData from '../../src/Data/summary.json';
+import LineChart from '../components/LineChart';
 
 const Home = () => {
   return (
@@ -43,7 +44,9 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='w-[27%]'></div>
+          <div className='mt-4 md:mt-0 '>
+            <LineChart/>
+          </div>
         </div>
       </DashboardContainer>
     </div>
