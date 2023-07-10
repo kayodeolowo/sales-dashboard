@@ -12,13 +12,13 @@ const LineChart = () => {
       {
         label: 'Loyal Customers',
         data: [10, 20, 10, 40, 50, 60],
-        borderColor: 'red',
+        borderColor: 'yellow',
         fill: false,
       },
       {
         label: 'New Customers',
         data: [15, 55, 35, 45, 70, 65],
-        borderColor: 'blue',
+        borderColor: 'purple',
         fill: false,
       },
       {
@@ -44,8 +44,8 @@ const LineChart = () => {
 
   return (
     <div className="w-full  bg-greyblack rounded-lg p-2">
-      <div className="">
-        <Line data={chartData} options={options} />
+      <div className=" md:h-[14rem]">
+        <Line data={chartData} options={options} className='' />
       </div>
     </div>
   );
