@@ -7,7 +7,7 @@ import LineChart from '../components/LineChart';
 
 const Home = () => {
   return (
-    <div>
+    <div className='bg-black'>
       <DashboardContainer>
         <NavContainer>
           <Navbar />

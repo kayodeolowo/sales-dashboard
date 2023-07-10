@@ -17,6 +17,7 @@ function App() {
 
                 <div className='w-full'> 
                     <Routes>
+                    <Route path="/" element={<Home/>} /> 
                         <Route path="/dashboard" element={<Home/>} /> 
                         <Route path="/orders" element={<Orders/>} /> 
                         <Route path="/products" element={<Products/>} /> 
