@@ -1,0 +1,87 @@
+[
+    { 
+      "id": 1,
+      "name": "M1 Macbook",
+      "price": "$2,000",
+      "category" : "Laptop",    
+      "Availability" : "In-Stock"     
+    },
+
+    { 
+      "id": 2,
+      "name": "Magic Mouse 2",
+      "price": "$299",
+      "category" : "Accessories",    
+      "Availability" : "In-Stock"     
+    },
+
+    { 
+      "id": 3,
+      "name": "Electric Table",
+      "price": "$3,899",
+      "category" : "Accessories",    
+      "Availability" : "Out-of-Stock"     
+    },
+
+    { 
+      "id": 4,
+      "name": "Microsoft Surface Pro",
+      "price": "$1,909",
+      "category" : "Laptop",    
+      "Availability" : "In-Stock"     
+    },
+
+    { 
+      "id": 5,
+      "name": "Keyboard",
+      "price": "$99",
+      "category" : "Accessories",    
+      "Availability" : "Out-of-Stock"     
+    },
+
+    { 
+      "id": 6,
+      "name": "Hd Monitor",
+      "price": "$1,199",
+      "category" : "Accessories",    
+      "Availability" : "In-Stock"     
+    },
+    
+
+    { 
+      "id": 7,
+      "name": "Microphone",
+      "price": "$739",
+      "category" : "Accessories",    
+      "Availability" : "In-Stock"     
+    },
+
+    { 
+      "id": 8,
+      "name": "Laptop bags",
+      "price": "$249",
+      "category" : "Accessories",    
+      "Availability" : "In-Stock"     
+    },
+
+    { 
+      "id": 9,
+      "name": "Laptop batteries",
+      "price": "$120",
+      "category" : "Accessories",    
+      "Availability" : "In-Stock"     
+    },
+    { 
+      "id": 10,
+      "name": "Mouse Pad",
+      "price": "$39",
+      "category" : "Accessories",    
+      "Availability" : "Out-of-Stock"     
+    }
+    
+      
+  ]
+  
+  
+  
+  
