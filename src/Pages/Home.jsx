@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar';
 import salesData from '../../src/Data/summary.json';
 import LineChart from '../components/LineChart';
 import BarChart from '../components/BarChart';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 
 const Home = () => {
@@ -17,10 +16,11 @@ const Home = () => {
                 'Blue',
 
             ],
-            data: [3, 6],
-            backgroundColor: ['yellow', 'purple'],
-            borderColor: ['#2A6AFF', '#AAC3FF'],
-            borderWidth: 0.5,
+            data: [18379, 4379],
+            backgroundColor: ['#FEB95A', '#A9DFD8'],
+             borderColor: ['#87888C', '#87888C'],
+             borderWidth: 0.5,
+            
         }]
     }
 
@@ -31,7 +31,7 @@ const Home = () => {
                     <Navbar />
                 </NavContainer>
 
-                <div className='flex flex-col md:flex-row md:space-x-4 mt-4 2xl:justify-between'>
+                <div className='flex flex-col md:flex-row md:justify-between'>
                     <div className='md:w-[65%]  bg-greyblack p-2  md:p-4 rounded-lg'>
                         <h1 className='text-white md:ml-4 mt-2 md:mt-0'>Today's Sales</h1>
                         <p className='text-greytext text-sm md:ml-4'>Sales Summary</p>
@@ -62,12 +62,12 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className='mt-4 md:mt-0  h-full'>
+                    <div className='md:w-[30%] mt-4 md:mt-0  h-full'>
                         <LineChart />
                     </div>
                 </div>
 
-                <div className='mt-4 flex flex-col md:flex-row  md:space-x-4 2xl:justify-between'>
+                <div className='mt-4 flex flex-col md:flex-row  md:justify-between'>
                     <div className='md:w-[65%]  bg-greyblack p-2  md:p-4 rounded-lg'>
                         <h1 className='text-white font-bold'> Top 3 Products </h1>
 
@@ -174,18 +174,20 @@ const Home = () => {
 
                     </div>
 
-                    <div className='mt-4 mb:mt-0'>
+                    <div className='md:w-[30%] mt-4 mb:mt-0'>
                         <BarChart />
                     </div>
                 </div>
 
 
-                <div>
-                    <div className='md:w-[50%] w-full mx-auto lg:mx-0 bg-greyblack mt-4  p-4 rounded-lg'>
+                <div className='flex flex-col md:flex-row  justify-between mt-4'>
+                    <div className='md:w-[40%] w-full mx-auto md:mx-0 bg-greyblack   p-4 rounded-lg'>
                         <div>
-                            <h1> Earnings </h1>
+                            <h1 className=' font-semibold text-white'>  Statistics </h1>
+                            <p className='text-yellow font-semibold'> Total Earnings <span className='font-semibold '> $18,379 </span></p>
+                            <p className='text-green font-semibold'> Profits <span> $4,379 </span></p>
                         </div>
-                        <div className='relative  md:w-[18rem] md:h-[18rem] mx-auto'>
+                        <div className='relative  md:w-[12rem] md:h-[12rem] mx-auto'>
                             <Doughnut
                                 data={data}
                                 className=''
@@ -196,7 +198,95 @@ const Home = () => {
                         </div>
                     </div>
                     
-                    
+                    <div className='md:w-[25%] bg-greyblack rounded-lg mt-4 md:mt-0 p-4'>
+                        <h1 className='text-white  font-bold '> Sales Mapping by Country </h1>
+                        <img src='./images/map.png' className='mt-4'/>
+                    </div>
+
+                    <div className=' md:w-[25%] bg-greyblack p-2 mt-4 md:mt-0  md:p-4 rounded-lg'>
+                        <h1 className='text-white font-bold'> Recent Orders </h1>
+
+
+                        <div class="relative overflow-x-auto">
+                            <table class="w-full text-sm text-left text-gray-500 ">
+                                <thead class="text-xs text-greytext uppercase ">
+                                    <tr>
+                                        <th scope="col" class=" py-3">
+                                            #
+                                        </th>
+
+                                        <th scope="col" class=" py-3">
+                                            Product name
+                                        </th>
+                                        <th scope="col" class=" py-3">
+                                            Orders
+                                        </th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class=" border-b  dark:border-gray-700">
+                                        <th scope="row" class=" py-4 font-medium text-white whitespace-nowrap ">
+                                            1
+                                        </th>
+
+                                        <th scope="row" class=" py-4 font-medium text-white whitespace-nowrap ">
+                                            Laptop  batteries
+                                        </th>
+                                        <td class=" py-4 text-white">
+                                            1,408
+                                        </td>
+                                       
+                                    </tr>
+                                    <tr class=" border-b  dark:border-gray-700">
+                                        <th scope="row" class=" py-4 font-medium text-white whitespace-nowrap ">
+                                            2
+                                        </th>
+
+                                        <th scope="row" class=" py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            Laptop bags
+                                        </th>
+                                        <td class=" py-4 text-white">
+                                            1,269
+                                        </td>
+                                       
+                                    </tr>
+
+                                    <tr class=" border-b  dark:border-gray-700">
+                                        <th scope="row" class=" py-4 font-medium text-white whitespace-nowrap ">
+                                            3
+                                        </th>
+
+                                        <th scope="row" class=" py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            Magic Mouse
+                                        </th>
+                                        <td class=" py-4 text-white">
+                                            1,082
+                                        </td>
+                                       
+                                    </tr>
+
+                                    <tr class=" border-b  dark:border-gray-700">
+                                        <th scope="row" class=" py-4 font-medium text-white whitespace-nowrap ">
+                                            4
+                                        </th>
+
+                                        <th scope="row" class=" py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                            Microsoft Surface Pro
+                                        </th>
+                                        <td class=" py-4 text-white">
+                                            389
+                                        </td>
+                                       
+                                    </tr>
+                                    
+
+                                  
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
                 </div>
 
                 

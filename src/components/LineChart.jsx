@@ -36,15 +36,15 @@ const LineChart = () => {
         type: 'category',
         ticks: {
           autoSkip: true,
-          maxTicksLimit: 6, // Limit the number of visible labels
+          maxTicksLimit: 3, // Limit the number of visible labels
         },
       },
     },
   };
 
   return (
-    <div className="w-full  bg-greyblack rounded-lg p-2">
-      <div className=" md:h-[14rem]">
+    <div className="w-full h-full  bg-greyblack rounded-lg p-2">
+      <div className=" md:h-[13rem]">
         <Line data={chartData} options={options} className='' />
       </div>
     </div>
