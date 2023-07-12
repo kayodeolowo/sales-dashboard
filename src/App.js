@@ -18,11 +18,11 @@ function App() {
                 <div className='w-full'> 
                     <Routes>
                     <Route path="/" element={<Home/>} /> 
-                        <Route path="/dashboard" element={<Home/>} /> 
+                        <Route path="/dashboard" element={<Home/>} />                        
+                        <Route path="/products" element={<Products/>} />
+                        {/* <Route path="/orders" element={<LeaderBoard/>} />   */}
+                        <Route path="/sales-report" element={<LeaderBoard/>} /> 
                         <Route path="/orders" element={<Orders/>} /> 
-                        <Route path="/products" element={<Products/>} /> 
-                        <Route path="/sales-report" element={<SalesReport/>} /> 
-                        <Route path="/leaderboard" element={<LeaderBoard/>} /> 
                         <Route path="/settings" element={<Settings/>} /> 
                         
                         

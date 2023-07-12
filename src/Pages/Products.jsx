@@ -21,21 +21,21 @@ const Products = () => {
   };
 
   return (
-    <div>
+    <div className='transition duration-500 ease-in'>
       <DashboardContainer>
         <NavContainer>
           <Navbar />
         </NavContainer>
 
         <div>
-          <div className="block w-full bg-greyblack overflow-x-auto overflow-y-auto px-4 h-[31rem] mb-10 md:h-fit shadow rounded-lg mt-4">
-            <div className="mb-4 mt-4 flex justify-end ">
-              {/* <label htmlFor="filter" className="mr-2 text-white bg-inherit">
-                Sort
-              </label> */}
+
+        {/* <div className="mb-4 mt-4 flex flex-col justify-end ">
+              <label htmlFor="filter" className="mr-2 text-white   bg-inherit">
+                Sort Products
+              </label>
               <select
                 id="filter"
-                className="px-1 py-0.5 rounded-md text-white bg-inherit border border-textgrey"
+                className="px-1 py-0.5 rounded-md text-white bg-inherit border w-[10rem] border-textgrey"
                 value={filter}
                 onChange={handleFilterChange}
               >
@@ -43,7 +43,9 @@ const Products = () => {
                 <option value="Accessories">Accessories</option>
                 <option value="Laptop">Laptop</option>
               </select>
-            </div>
+            </div> */}
+          <div className="block w-full bg-greyblack overflow-x-auto overflow-y-auto px-4 h-[31rem] mb-10 md:h-fit shadow rounded-lg mt-4">
+          
 
             <table className="items-center w-full rounded-md text-white border-collapse mb-10">
               <thead>

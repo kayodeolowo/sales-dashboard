@@ -39,7 +39,7 @@ const Sidebar = () => {
               lg:fixed border-r-[0.5px] border-greytext  ">
 
         <div className='lg:flex flex-col   '>
-          <div className=' hidden  ml-4 lg:flex  space-x-2  items-center'>
+          <div className=' hidden  ml-4 lg:flex  space-x-2 hover:cursor-pointer items-center'>
             <img src='./images/logo.png' alt='logo' className='w-6' />
             <h1 className=' text-base font-bold uppercase font-mono mt-2 bg-gradient-to-r from-blue to-yellow bg-clip-text text-transparent'> Marketie </h1>
 
@@ -50,10 +50,10 @@ const Sidebar = () => {
 
           <ul id='nav' className=' text-[0.9rem]   text-textgray hidden   lg:flex flex-col    mt-10 space-y-4 ml-4  '>
             <NavLink to='/dashboard' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text> <AiFillHome className='mr-2' /> Dashboard </Text>   </NavLink>
-            <NavLink to='/orders' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text> <BsFillCartCheckFill className='mr-2 font-bold' /> Orders </Text>   </NavLink>
+            {/* <NavLink to='/orders' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text> <BsFillCartCheckFill className='mr-2 font-bold' /> Orders </Text>   </NavLink> */}
             <NavLink to='/products' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text> <BsFillBasket2Fill className='mr-2' /> Products </Text>   </NavLink>
             <NavLink to='/sales-report' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text> <TbNotes className='mr-2' /> Sales Report </Text>   </NavLink>
-            <NavLink to='/leaderboard' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text> <RiBarChartFill className='mr-2' /> LeaderBoard </Text>   </NavLink>
+            {/* <NavLink to='/orders' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text> <BsFillCartCheckFill className='mr-2' /> Orders </Text>   </NavLink> */}
             <NavLink to='/settings' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text> <IoMdSettings className='mr-2' /> Settings </Text>   </NavLink>
             <Text> <TbLogout className='mr-2' /> Sign Out </Text>
           </ul>
@@ -97,10 +97,12 @@ const Sidebar = () => {
           </div>
 
           <NavLink to='/dashboard' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='w-fit' onClick={handleNav}> <AiFillHome className='mr-2' /> Dashboard </Text>   </NavLink>
-          <NavLink to='/orders' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='w-fit' onClick={handleNav}> <BsFillCartCheckFill className='mr-2 font-bold' /> Orders </Text>   </NavLink>
+          {/* <NavLink to='/orders' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='w-fit' onClick={handleNav}> <BsFillCartCheckFill className='mr-2 font-bold' /> Orders </Text>   </NavLink> */}
           <NavLink to='/products' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='w-fit' onClick={handleNav}> <BsFillBasket2Fill className='mr-2' /> Products </Text>   </NavLink>
           <NavLink to='/sales-report' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='w-fit' onClick={handleNav}> <TbNotes className='mr-2' /> Sales Report </Text>   </NavLink>
-          <NavLink to='/leaderboard' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='w-fit' onClick={handleNav}> <RiBarChartFill className='mr-2' /> LeaderBoard </Text>   </NavLink>
+          {/* <NavLink to='/leaderboard' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='w-fit' onClick={handleNav}> <RiBarChartFill className='mr-2' /> LeaderBoard </Text>   </NavLink> */}
+         
+          
           <NavLink to='/settings' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='w-fit' onClick={handleNav}> <IoMdSettings className='mr-2' /> Settings </Text>   </NavLink>
           <Text className='w-fit' onClick={handleNav}> <TbLogout className='mr-2' /> Sign Out </Text>
 

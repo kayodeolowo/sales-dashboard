@@ -7,6 +7,7 @@ import LineChart from '../components/LineChart';
 import BarChart from '../components/BarChart';
 import { Doughnut } from 'react-chartjs-2';
 
+
 const Home = () => {
     const data = {
 
@@ -35,6 +36,7 @@ const Home = () => {
                     <div className='md:w-[65%]  bg-greyblack p-2  md:p-4 rounded-lg'>
                         <h1 className='text-white md:ml-4 mt-2 md:mt-0'>Today's Sales</h1>
                         <p className='text-greytext text-sm md:ml-4'>Sales Summary</p>
+                        
 
                         <div className='grid mt-4 md:mt-0 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 mb-4 md:mb-0 md:gap-5 md:p-4'>
                             {salesData.map((item) => {
@@ -118,7 +120,7 @@ const Home = () => {
                                             2
                                         </th>
 
-                                        <th scope="row" class=" py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        <th scope="row" class=" py-4 font-medium text-white whitespace-nowrap dark:text-white">
                                             Microsoft Surface Pro
                                         </th>
                                         <td class=" py-4 text-white">
@@ -136,7 +138,7 @@ const Home = () => {
                                             3
                                         </th>
 
-                                        <th scope="row" class=" py-4 font-medium  whitespace-nowrap dark:text-white">
+                                        <th scope="row" class=" py-4 font-medium  whitespace-nowrap text-white">
                                             Magic Mouse 2
                                         </th>
                                         <td class="py-4 text-white">
@@ -155,7 +157,7 @@ const Home = () => {
                                             4
                                         </th>
 
-                                        <th scope="row" class=" py-4 font-medium  whitespace-nowrap dark:text-white">
+                                        <th scope="row" class=" py-4 font-medium  text-white whitespace-nowrap dark:text-white">
                                             Cloud
                                         </th>
                                         <td class="py-4 text-white">
@@ -243,7 +245,7 @@ const Home = () => {
                                             2
                                         </th>
 
-                                        <th scope="row" class=" py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        <th scope="row" class=" py-4 font-medium text-white whitespace-nowrap dark:text-white">
                                             Laptop bags
                                         </th>
                                         <td class=" py-4 text-white">
@@ -257,7 +259,7 @@ const Home = () => {
                                             3
                                         </th>
 
-                                        <th scope="row" class=" py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        <th scope="row" class=" py-4 font-medium text-white whitespace-nowrap ">
                                             Magic Mouse
                                         </th>
                                         <td class=" py-4 text-white">
@@ -271,7 +273,7 @@ const Home = () => {
                                             4
                                         </th>
 
-                                        <th scope="row" class=" py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        <th scope="row" class=" py-4 font-medium text-white whitespace-nowrap dark:text-white">
                                             Microsoft Surface Pro
                                         </th>
                                         <td class=" py-4 text-white">
