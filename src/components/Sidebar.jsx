@@ -3,8 +3,7 @@ import { AiOutlineClose, AiOutlineShoppingCart } from 'react-icons/ai';
 import { TbLogout, TbMenu2, TbNotes } from 'react-icons/tb';
 import { NavLink, Link } from 'react-router-dom';
 import { RiBarChartFill, RiSearchLine } from 'react-icons/ri'
-import { FiSearch } from 'react-icons/fi'
-import { RiCloseFill } from 'react-icons/ri'
+
 import { Text } from '../styles/Text';
 import { AiFillHome } from 'react-icons/ai'
 import { BsFillBasket2Fill, BsFillCartCheckFill } from 'react-icons/bs'
