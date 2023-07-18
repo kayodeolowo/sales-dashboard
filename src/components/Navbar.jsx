@@ -14,7 +14,9 @@ const Navbar = () => {
   
     <div className='hidden lg:flex items-center space-x-4'>
       <img className='hover:cursor-pointer' src='./images/notification.png' alt='icons' />
-      <img className='h-6 hover:cursor-pointer' src='./images/profile.png' alt='' />
+     <a href='https://kayodeolowo.netlify.app/' target='blank' className='hover:cursor-pointer'> 
+     <img className='h-6 hover:cursor-pointer' src='./images/profile.png' alt='' />
+     </a>
     </div>
   </div>
   )

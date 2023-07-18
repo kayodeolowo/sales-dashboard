@@ -48,13 +48,16 @@ const Sidebar = () => {
 
 
           <ul id='nav' className=' text-[0.9rem]   text-textgray hidden   lg:flex flex-col    mt-10 space-y-4 ml-4  '>
-            <NavLink to='/dashboard' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text> <AiFillHome className='mr-2' /> Dashboard </Text>   </NavLink>
+            <NavLink to='/dashboard' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='hover:text-green'> <AiFillHome className='mr-2' /> Dashboard </Text>   </NavLink>
             {/* <NavLink to='/orders' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text> <BsFillCartCheckFill className='mr-2 font-bold' /> Orders </Text>   </NavLink> */}
-            <NavLink to='/products' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text> <BsFillBasket2Fill className='mr-2' /> Products </Text>   </NavLink>
-            <NavLink to='/sales-report' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text> <TbNotes className='mr-2' /> Sales Report </Text>   </NavLink>
+            <NavLink to='/products' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='hover:text-green'> <BsFillBasket2Fill className='mr-2' /> Products </Text>   </NavLink>
+            <NavLink to='/sales-report' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='hover:text-green'> <TbNotes className='mr-2' /> Sales Report </Text>   </NavLink>
             {/* <NavLink to='/orders' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text> <BsFillCartCheckFill className='mr-2' /> Orders </Text>   </NavLink> */}
-            <NavLink to='/settings' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text> <IoMdSettings className='mr-2' /> Settings </Text>   </NavLink>
-            <Text> <TbLogout className='mr-2' /> Sign Out </Text>
+            <NavLink to='/settings' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='hover:text-green'> <IoMdSettings className='mr-2' /> Settings </Text>   </NavLink>
+            <Text className='hover:text-green'> <TbLogout className='mr-2' /> Sign Out </Text>
+           <a href='https://kayodeolowo.netlify.app/' target='blank'> 
+           <Text className='hover:text-green'> Kayode Olowo </Text>
+           </a>
           </ul>
         </div>
         {/* mobile hamburger */}
@@ -104,6 +107,9 @@ const Sidebar = () => {
           
           <NavLink to='/settings' className={({ isActive }) => (isActive ? activeLink : normalLink)}    >  <Text className='w-fit' onClick={handleNav}> <IoMdSettings className='mr-2' /> Settings </Text>   </NavLink>
           <Text className='w-fit' onClick={handleNav}> <TbLogout className='mr-2' /> Sign Out </Text>
+          <a href='https://kayodeolowo.netlify.app/' target='blank'> 
+           <Text className='hover:text-green'> Kayode Olowo </Text>
+           </a>
 
         </div>
       </div>

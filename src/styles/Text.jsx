@@ -5,7 +5,7 @@ export const Text = tw.p`
 mt-1 
 hover:cursor-pointer 
 transition  
-hover:text-white 
+hover:text-green 
 duration-200 
 hover:text-semibold 
 w-[8rem]  
