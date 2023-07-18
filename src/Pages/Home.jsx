@@ -42,7 +42,7 @@ const Home = () => {
                             {salesData.map((item) => {
                                 let textColor = '';
 
-                                if (item.des.includes('+10%')) {
+                                if (item.des.includes('+1%')) {
                                     textColor = 'text-yellow';
                                 } else if (item.des.includes('+8%')) {
                                     textColor = 'text-green';
@@ -133,7 +133,7 @@ const Home = () => {
                                             $1,909
                                         </td>
                                     </tr>
-                                    <tr class=" ">
+                                    <tr class=" border-b  dark:border-gray-700">
                                         <th scope="row" class=" py-4 font-medium text-white whitespace-nowrap ">
                                             3
                                         </th>
@@ -152,7 +152,7 @@ const Home = () => {
                                         </td>
                                     </tr>
 
-                                    <tr class=" ">
+                                    <tr class="border-b  dark:border-gray-700 ">
                                         <th scope="row" class=" py-4 font-medium text-white whitespace-nowrap ">
                                             4
                                         </th>
